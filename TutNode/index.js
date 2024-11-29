@@ -32,8 +32,7 @@ const server = http.createServer((req, res) => {
       }
       const updatedData = { ...existingData, ...postData };
 
-      fs.writeFileSync(filePath, JSON.stringify(updatedData, null, gf btnh8iop[]
-        42));
+      fs.writeFileSync(filePath, JSON.stringify(updatedData, null, 2));
       res.end(
         JSON.stringify({
           message: "Data received and updated successfully",
