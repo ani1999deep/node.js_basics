@@ -60,7 +60,7 @@ app.put("/updateData", (req, res) => {
       if (error) {
         res.status(500).send(error);
       } else {
-        res.send(200).send(data);
+        res.status(200).send(data);
       }
     }
   );
